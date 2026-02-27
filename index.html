@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaidehi Jobiraj | Portfolio</title>
+    <style>
+        /* CSS Variables for easy color changes */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-color);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Header / Hero Section */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: white;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        /* Layout Containers */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Specific Lists */
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item h3 {
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        .date {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .skills-list, .interest-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="portfolio.html">Home</a>
+        <a href="about.html">About</a> 
+        <a href="education.html">Education</a>
+        <a href="project.html">Projects</a>
+        <a href="certificate.html">Certificates</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header id="home">
+        <img src="pic.jpg" alt="Vaidehi Jobiraj" class="profile-img">
+        <h1>Vaidehi Jobiraj</h1>
+        <p>MCA Student | Santhigiri College</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate MCA student at Santhigiri College with a strong interest in software development and problem-solving. I am eager to apply my academic knowledge to real-world challenges.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <h3>Post Graduation</h3>
+                <h4>MCA</h4>
+                <p>Santhigiri College of Computer Science,Vazhithala</p>
+                <p class="date">Pursuing</p>
+            </div>
+            <div class="item">
+                <H3>Graduation</H3>
+                <h4>BCA</h4>
+                <p>Santhigiri College of Computer Science,Vazhithala</p>
+                <p class="date">2023</p>
+                <p class="date">CGPA : 6.35</p>
+                <p class="date">Year of Completion : 2023</p>
+            </div>
+            <div class="item">
+                <h3>Higher Secondary Education</h3>
+                <p>NSS HSS Manakkadu</p>
+                <p class="date">75%</p>
+                <p class="date">Year of Completion : 2020</p>
+            </div>
+            <div class="item">
+                <h3>SSLC</h3>
+                <p>St.Sebastian's High School Thodupuzha</p>
+                <p class="date">87%</p>
+                <p class="date">Year of Completion : 2018</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Academic Projects</h2>
+            <div class="item">
+                <h3>Mini Project:</h3>
+                <h4>Home Gadgets</h4>
+                <p><strong>Front-end: HTML, CSS, Back-end: MySQL</strong> A Home Gadget System Online is a smart home setup that lets you control household devices like lights, fans, cameras, and appliances through the internet.</p>
+            </div>
+            <div class="item">
+                <h3>Main Project:</h3>
+                <h4>Maternity Healthcare System</h4>
+                <p><strong>Front-end: Python Django, Back-end: MySQL</strong>An online maternity healthcare system is a digital platform that helps pregnant women consult doctors, book appointments, access medical records, and receive care guidance through the internet. </p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="tag">C</span>
+                <span class="tag">Python</span>
+                <span class="tag">C++</span>
+                <span class="tag">HTML</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Django</span>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <h4>Research Publication</h4>
+            <ul>
+                <li>Successfully published a research paper entitled 'Goal Programming' in an international journal</li>
+                <!-- <li>Workshop on [Topic Name] - [Year]</li> -->
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="item"><ul>
+                <li>Successfully completed one month internship under NeST Digital Academy</li></ul>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+            <div class="interest-list">
+                <span class="tag" style="background: #95a5a6;">Dancing</span>
+                <span class="tag" style="background: #95a5a6;">Cooking</span>
+                <span class="tag" style="background: #95a5a6;">Travelling</span>
+                <span class="tag" style="background: #95a5a6;">Gardening</span>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vaidehi Jobiraj. Built with passion</p>
+    </footer>
+
+</body>
+</html>
